@@ -71,7 +71,7 @@ class SchedulerManager:
     def add_job(self, job_class_string, name, pub_args=None,
                 month=None, day_of_week=None, day=None, hour=None, minute=None,
                 **kwargs):
-        """Add a job. Job infomation will be persistent in postgres.
+        """Add a job. Job information will be persistent in postgres.
 
         This is a NON-BLOCKING operation, as internally, apscheduler calls wakeup()
         that is async.
